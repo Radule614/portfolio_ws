@@ -127,7 +127,7 @@ export const Games = ({ color }: { color: string }) => {
                         <div className={classes.imageBorder}></div>
                       </MouseParallaxChild>
                       <div className={classes.image}>
-                        <video src={c.media} loop autoPlay muted></video>
+                        <video src={c.media} loop autoPlay muted/>
                       </div>
                     </motion.div>
                   </AnimatePresence>

@@ -11,20 +11,20 @@ import { isMobile } from "react-device-detect";
 const Content = {
   Text: (
     <p>
-      Our development team comprises three highly skilled individuals who are in
-      their final year of studying computer science and automation at the
-      Faculty of Technical Sciences in Novi Sad. Throughout their academic
-      journey, they have gained invaluable knowledge and experience in
-      cutting-edge tech skills. While their expertise primarily lies in
-      web-based development, they are eagerly expanding their horizons to delve
-      into the exciting world of game development.
+      Our development team consists of three highly skilled individuals who are
+      in their final year of studying computer science and automation at the
+      Faculty of Technical Sciences in Novi Sad. During their academic journey,
+      they have acquired invaluable knowledge and experience in state-of-the-art
+      tech skills. Although their expertise mainly lies in web-based
+      development, they are enthusiastically broadening their horizons to
+      explore the captivating realm of game development.
       <br />
       <br />
-      With a strong foundation in computer science, our team is equipped with
-      the necessary technical prowess to tackle the complexities of game
-      development. They bring a wealth of programming knowledge, algorithmic
-      thinking, and problem-solving abilities to the table, ensuring robust and
-      efficient game design.
+      Our team possesses a solid background in computer science, providing the
+      essential technical skills to address the intricacies of game development.
+      The three of them bring an abundance of programming expertise, logic-based
+      thinking, and problem-solving capabilities to the forefront, guaranteeing
+      a resilient and efficient game design.
     </p>
   ),
 };

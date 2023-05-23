@@ -21,8 +21,8 @@ export const AboutUs = ({ color }: { color: string }) => {
           games that leave a lasting impression. Our developers bring our ideas
           to life with seamless tech wizardry, ensuring smooth gameplay. Working
           hand-in-hand, our designers craft immersive and engaging gameplay that
-          captivate players. Our crew consists of 5 members each bringing
-          his/her own flavor. <br />
+          captivate players. Our crew consists of 5 members each bringing their
+          own flavour <br />
           <br />
           <b style={{ color: "#9D75CB" }}>Nataša:</b> A talented game designer
           who possesses a unique skill set in both Japanese and Korean
@@ -30,7 +30,7 @@ export const AboutUs = ({ color }: { color: string }) => {
           multicultural perspective to our team.
           <br />
           <br />
-          <b style={{ color: COLORS[3] }}>Vaso:</b> A game designer with a
+          <b style={{ color: COLORS[3] }}>Vasi:</b> A game designer with a
           proven talent for crafting captivating gaming experiences, she brings
           her creative vision and attention to detail to our team.
         </div>
@@ -44,14 +44,14 @@ export const AboutUs = ({ color }: { color: string }) => {
           industry. With a keen interest in computer graphics, he leverages his
           knowledge and enthusiasm to bring visually stunning worlds to life.
           <br />
-          <Github link="https://github.com/Radule614"/>
+          <Github link="https://github.com/Radule614" />
           <br />
           <b style={{ color: COLORS[1] }}>Nemanja:</b> Proved game developer who
           brings a wealth of experience and a track record of successful games.
           Through his dedication and talent, he has established himself as a
           valuable asset to our team.
           <br />
-          <Github link="https://github.com/nemanja2106"/>
+          <Github link="https://github.com/nemanja2106" />
           <br />
           <b style={{ color: COLORS[4] }}>Marko:</b> With a strong passion, he
           has turned his hobby of playing games into a creative pursuit by
@@ -59,7 +59,7 @@ export const AboutUs = ({ color }: { color: string }) => {
           showcases his technical skills and the projects he has undertaken in
           the gaming realm.
           <br />
-          <Github link="https://github.com/Marko007205"/>
+          <Github link="https://github.com/Marko007205" />
         </div>
       ),
     },
