@@ -14,8 +14,14 @@ const Content = [
   {
     title: "Crypt Theft",
     media: "assets/cryptTheft.webm",
-    text: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    text: `
+      This is a first-person game designed and implemented using Unreal Engine 5 and C++. Players will experience the use of Lumen, 
+      which creates various lighting effects and enhances the game's visual quality. Additionally, line tracing enables players to interact 
+      with and pick up objects within the game environment.  Moreover, the game features a trigger component that adds an additional challenge 
+      to the gameplay. For instance, when players pick up the mysterious statue from the temple, the trigger component activates and closes 
+      the gate, making it harder to escape. Players will need to use their problem-solving skills to figure out how to solve this issue and 
+      successfully navigate the obstacles to complete the game's objective.
+    `,
   },
   {
     title: "Minecraft",
@@ -29,8 +35,11 @@ const Content = [
   {
     title: "Through The Clouds",
     media: "assets/throughTheClouds.webm",
-    text: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    text: `
+      This is a third-person game designed and implemented using Unreal Engine 5 and C++. When playing this game, players will encounter 
+      challenging features such as rotating and moving platforms, as well as obstacles that increase the game's difficulty and provide 
+      an exciting gameplay experience.
+    `,
   },
   {
     title: "Tanks",
@@ -59,11 +68,7 @@ function TabPanel(props: TabPanelProps) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box>
-          {children}
-        </Box>
-      )}
+      {value === index && <Box>{children}</Box>}
     </div>
   );
 }
@@ -122,7 +127,7 @@ export const Games = ({ color }: { color: string }) => {
                         <div className={classes.imageBorder}></div>
                       </MouseParallaxChild>
                       <div className={classes.image}>
-                        <video src={c.media} loop autoPlay></video>
+                        <video src={c.media} loop autoPlay muted></video>
                       </div>
                     </motion.div>
                   </AnimatePresence>

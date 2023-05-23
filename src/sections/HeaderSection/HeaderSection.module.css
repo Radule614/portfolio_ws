@@ -71,7 +71,7 @@
   background-image: url("../../../public/assets/intro.png");
   background-size: cover;
   background-position: center;
-  box-shadow: 20px 20px 30px #000;
+  box-shadow: 8px 8px 12px #000;
 }
 
 .parallaxContainer {

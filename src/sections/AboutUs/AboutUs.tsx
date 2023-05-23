@@ -8,12 +8,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { COLORS } from "utility";
 import { isMobile } from "react-device-detect";
 import clsx from "clsx";
+import { Github } from "components/github";
 
 export const AboutUs = ({ color }: { color: string }) => {
   const Content = [
     {
       Text: (
-        <p>
+        <div>
           We are a dedicated team of game developers and creative designers
           committed to delivering unforgettable gaming experiences. With
           expertise in gameplay mechanics and eye-catching visuals, we create
@@ -32,31 +33,25 @@ export const AboutUs = ({ color }: { color: string }) => {
           <b style={{ color: COLORS[3] }}>Vaso:</b> A game designer with a
           proven talent for crafting captivating gaming experiences, she brings
           her creative vision and attention to detail to our team.
-        </p>
+        </div>
       ),
     },
     {
       Text: (
-        <p>
+        <div>
           <b style={{ color: COLORS[2] }}>Rade:</b> A passionate software
           engineer with a strong desire to make a mark in the game development
           industry. With a keen interest in computer graphics, he leverages his
           knowledge and enthusiasm to bring visually stunning worlds to life.
           <br />
-          <a className={classes.link} href="https://github.com/Radule614">
-            https://github.com/Radule614
-          </a>
-          <br />
+          <Github link="https://github.com/Radule614"/>
           <br />
           <b style={{ color: COLORS[1] }}>Nemanja:</b> Proved game developer who
           brings a wealth of experience and a track record of successful games.
           Through his dedication and talent, he has established himself as a
           valuable asset to our team.
           <br />
-          <a className={classes.link} href="https://github.com/nemanja2106">
-            https://github.com/nemanja2106
-          </a>
-          <br />
+          <Github link="https://github.com/nemanja2106"/>
           <br />
           <b style={{ color: COLORS[4] }}>Marko:</b> With a strong passion, he
           has turned his hobby of playing games into a creative pursuit by
@@ -64,10 +59,8 @@ export const AboutUs = ({ color }: { color: string }) => {
           showcases his technical skills and the projects he has undertaken in
           the gaming realm.
           <br />
-          <a className={classes.link} href="https://github.com/Marko007205">
-            https://github.com/Marko007205
-          </a>
-        </p>
+          <Github link="https://github.com/Marko007205"/>
+        </div>
       ),
     },
   ];
