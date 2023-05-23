@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  padding: 15vh 10vw 5vh 10vw;
+  gap: 2vw;
+  color: #ddd;
+}
+
+.mobile .container {
+  display: block;
+  padding: 12vh 7vw 5vh 7vw;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.mobile .left,
+.mobile .right {
+  width: 100%;
+}
+.mobile .left {
+  justify-content: center;
+}
+.left {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 50px;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 7vh;
+  padding-left: 4vw;
+}
+
+.mobile .text {
+  padding-left: 0;
+  padding: 0px 20px;
+  font-size: 32px;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 70vh;
+  margin-top: 5vh;
+  height: 40vh;
+  position: relative;
+}
+
+.imageBorderContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.imageBorder {
+  width: 100%;
+  height: 100%;
+  border: 0.5vh solid #ddd;
+  border-radius: 3vh;
+  position: absolute;
+}
+
+.image {
+  position: relative;
+  width: calc(100% - 1vw);
+  height: calc(100% - 1vh);
+  border-radius: 3vh;
+  background-image: url("../../../public/assets/intro.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 20px 20px 30px #000;
+}
+
+.parallaxContainer {
+  width: 100%;
+  height: 100%;
+}

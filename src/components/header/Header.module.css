@@ -1,0 +1,47 @@
+.header{
+  position: fixed;
+  height: 7vh;
+  z-index: 100;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  gap: 2vh;
+  align-items: center;
+}
+
+.mobile.header{
+  height: 60px;
+  gap: 10px;
+  background-color: #000;
+}
+
+.link {
+  color: #bbb;
+  font-size: 3vh;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile .link{
+  font-size: 15.5px;
+}
+
+.link:last-child {
+  margin-right: 8vh;
+}
+
+.mobile .link:last-child {
+  margin-right: 20px;
+}
+
+a.link:visited {
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.link.active{
+  color: #fff;
+}
