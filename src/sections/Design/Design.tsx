@@ -8,18 +8,26 @@ import { Section } from "../../components/section";
 import classes from "./Design.module.css";
 import { isMobile } from "react-device-detect";
 import clsx from "clsx";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 const Content = {
-  Text: `
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
-    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor 
-    sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam 
-    aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-    nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
-    nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-  `,
+  Text: (
+    <p>
+      Meet the art design team, Nataša and Vasi, two talented creatives who
+      contribute their distinct artistic sensibility to our team. Nataša is a
+      traditional artist who can conjure up feelings both on canvas with
+      minimalistic style and work magic with threads through embroidery. Vasi, a
+      creative animator and digital artist, on the other hand, gives characters
+      life and mesmerizes us with her enthralling animations. She's a proven
+      talent, creative mind and all-rounder.
+      <br />
+      <br />
+      Together, they stand for a seamless fusion of traditional and digital
+      craftsmanship, producing mesmerizing images that leave an impression. Get
+      ready to be moved by these hardworking artists as they take you on a
+      journey via their innovative works!
+    </p>
+  ),
 };
 
 export const Design = ({ color }: { color: string }) => {
@@ -33,6 +41,15 @@ export const Design = ({ color }: { color: string }) => {
           isMobile ? classes.mobile : undefined
         )}
       >
+        <div className={classes.backgroundWrapper}>
+          <MouseParallaxChild
+            className={classes.imageBorderContainer}
+            factorX={!isMobile ? 0.2 : 0}
+            factorY={!isMobile ? 0.2 : 0}
+          >
+            <div className={classes.background} />
+          </MouseParallaxChild>
+        </div>
         <div className={classes.container}>
           <div className={classes.left}>
             <AnimatePresence>
@@ -53,7 +70,29 @@ export const Design = ({ color }: { color: string }) => {
                 >
                   <div className={classes.imageBorder}></div>
                 </MouseParallaxChild>
-                <div className={classes.image}></div>
+                <Swiper
+                  className={clsx(classes.carousel, classes.noselect)}
+                  spaceBetween={5}
+                  navigation={true}
+                  slidesPerView={1}
+                  modules={[Navigation]}
+                >
+                  <SwiperSlide className={classes.image}>
+                    <img src={"assets/1.jpeg"} alt="1" />
+                  </SwiperSlide>
+                  <SwiperSlide className={classes.image}>
+                    <img src={"assets/2.jpeg"} alt="2" />
+                  </SwiperSlide>
+                  <SwiperSlide className={classes.image}>
+                    <img src={"assets/3.jpeg"} alt="3" />
+                  </SwiperSlide>
+                  <SwiperSlide className={classes.image}>
+                    <img src={"assets/4.jpg"} alt="4" />
+                  </SwiperSlide>
+                  <SwiperSlide className={classes.image}>
+                    <img src={"assets/5.jpeg"} alt="5" />
+                  </SwiperSlide>
+                </Swiper>
               </motion.div>
             </AnimatePresence>
           </div>
@@ -74,7 +113,6 @@ export const Design = ({ color }: { color: string }) => {
                     }}
                   >
                     <span>{Content.Text}</span>
-                    <span>&nbsp;</span>
                   </motion.div>
                 </AnimatePresence>
               </div>

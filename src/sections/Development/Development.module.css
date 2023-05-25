@@ -33,6 +33,7 @@
   flex-wrap: wrap;
   font-size: 2.2vh;
   padding-right: 4vw;
+  position: relative;
 }
 
 .mobile .text {
@@ -76,4 +77,23 @@
 .parallaxContainer{
   width: 100%;
   height: 100%;
+}
+
+.backgroundWrapper{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: relative;
+  background-image: url("../../../public/assets/wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 150%;
+  height: 150%;
+  margin-left: -10%;
+  margin-top: -10%;
 }

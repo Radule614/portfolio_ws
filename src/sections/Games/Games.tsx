@@ -97,6 +97,15 @@ export const Games = ({ color }: { color: string }) => {
           isMobile ? classes.mobile : undefined
         )}
       >
+        <div className={classes.backgroundWrapper}>
+          <MouseParallaxChild
+            className={classes.imageBorderContainer}
+            factorX={!isMobile ? 0.2 : 0}
+            factorY={!isMobile ? 0.2 : 0}
+          >
+            <div className={classes.background} />
+          </MouseParallaxChild>
+        </div>
         <div className={classes.container}>
           <div className={classes.tabs}>
             <Tabs value={value} onChange={handleChange}>

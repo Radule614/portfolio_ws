@@ -37,6 +37,7 @@
   flex-wrap: wrap;
   font-size: 2.2vh;
   padding-left: 4vw;
+  position: relative;
 }
 
 .mobile .text {
@@ -48,7 +49,7 @@
   width: 100%;
   max-width: 70vh;
   margin-top: 5vh;
-  height: 40vh;
+  height: 60vh;
   position: relative;
 }
 
@@ -66,12 +67,11 @@
   position: absolute;
 }
 
-.image {
+.carousel {
   position: relative;
   width: calc(100% - 1vw);
   height: calc(100% - 1vh);
   border-radius: 3vh;
-  background-image: url("../../../public/assets/coffee.gif");
   background-size: cover;
   background-position: center;
   box-shadow: 8px 8px 12px #000;
@@ -80,4 +80,53 @@
 .parallaxContainer{
   width: 100%;
   height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 3vh;
+  background-size: cover;
+  background-position: center;
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  overflow: hidden;
+}
+
+.image > img {
+  height:  100%;
+}
+.swiper{
+  height: 100%;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.backgroundWrapper{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: relative;
+  background-image: url("../../../public/assets/wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 150%;
+  height: 150%;
+  margin-left: -10%;
+  margin-top: -10%;
 }

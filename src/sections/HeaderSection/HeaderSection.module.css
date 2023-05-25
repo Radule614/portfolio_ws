@@ -3,6 +3,7 @@
   padding: 15vh 10vw 5vh 10vw;
   gap: 2vw;
   color: #ddd;
+  position: relative;
 }
 
 .mobile .container {
@@ -77,4 +78,23 @@
 .parallaxContainer {
   width: 100%;
   height: 100%;
+}
+
+.backgroundWrapper{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: relative;
+  background-image: url("../../../public/assets/wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 150%;
+  height: 150%;
+  margin-left: -10%;
+  margin-top: -10%;
 }

@@ -12,7 +12,18 @@
 .mobile.header{
   height: 60px;
   gap: 10px;
+}
+
+.header::before{
+  content: "";
+  position: absolute;
+  inset: 0;
   background-color: #000;
+  opacity: 0.0;
+}
+
+.mobile.header::before{
+  opacity: 0.9;
 }
 
 .link {
@@ -20,6 +31,7 @@
   font-size: 3vh;
   text-decoration: none;
   display: block;
+  position: relative;
 }
 
 .mobile .link{

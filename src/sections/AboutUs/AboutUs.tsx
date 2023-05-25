@@ -33,6 +33,7 @@ export const AboutUs = ({ color }: { color: string }) => {
           <b style={{ color: COLORS[3] }}>Vasi:</b> A game designer with a
           proven talent for crafting captivating gaming experiences, she brings
           her creative vision and attention to detail to our team.
+          <br/><br/>
         </div>
       ),
     },
@@ -75,6 +76,15 @@ export const AboutUs = ({ color }: { color: string }) => {
           isMobile ? classes.mobile : undefined
         )}
       >
+        <div className={classes.backgroundWrapper}>
+          <MouseParallaxChild
+            className={classes.imageBorderContainer}
+            factorX={!isMobile ? 0.2 : 0}
+            factorY={!isMobile ? 0.2 : 0}
+          >
+            <div className={classes.background} />
+          </MouseParallaxChild>
+        </div>
         <div className={classes.container}>
           <div className={classes.left}>
             <AnimatePresence>
@@ -108,8 +118,8 @@ export const AboutUs = ({ color }: { color: string }) => {
                 }}
               >
                 <MouseParallaxChild
-                  factorX={!isMobile ? 0.4 : 0}
-                  factorY={!isMobile ? 0.5 : 0}
+                  factorX={!isMobile ? 0.35 : 0}
+                  factorY={!isMobile ? 0.45 : 0}
                 >
                   <div>{Content[1].Text}</div>
                 </MouseParallaxChild>

@@ -111,11 +111,30 @@
   font-size: 2.2vh;
   padding-left: 4vw;
   padding-top: 2vh;
+  position: relative;
 }
-
 
 .mobile .text {
   padding-left: 0px;
   padding-top: 10px;
   font-size: 19px;
+}
+
+.backgroundWrapper{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: relative;
+  background-image: url("../../../public/assets/wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 150%;
+  height: 150%;
+  margin-left: -10%;
+  margin-top: -10%;
 }
